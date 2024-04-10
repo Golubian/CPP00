@@ -6,7 +6,7 @@
 /*   By: gachalif <gachalif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 15:05:14 by gachalif          #+#    #+#             */
-/*   Updated: 2024/04/09 15:40:31 by gachalif         ###   ########.fr       */
+/*   Updated: 2024/04/10 11:16:05 by gachalif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ class Contact
 		Contact(std::string firstName, std::string lastName, std::string nickname, std::string phoneNumber, std::string darkestSecret);
 		void	showColumn(int index);
 		void	showContact(int index);
+		void	setIndex(void);
 };
 
 #endif

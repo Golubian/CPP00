@@ -2,7 +2,8 @@ NAME = phonebook
 CC = g++
 FLAGS = -Wall -Werror -Wextra -std=c++98 -pedantic
 SRCS =	phonebook.cpp \
-		contact.cpp
+		contact.cpp \
+		main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
