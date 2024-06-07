@@ -6,7 +6,7 @@
 /*   By: gachalif <gachalif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 15:05:14 by gachalif          #+#    #+#             */
-/*   Updated: 2024/04/10 11:16:05 by gachalif         ###   ########.fr       */
+/*   Updated: 2024/06/07 17:02:48 by gachalif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <iostream>
 # include <iomanip>
 # include <string>
+# include <list>
 
 class Contact
 {
@@ -25,12 +26,16 @@ class Contact
 		std::string	nickname;
 		std::string phoneNumber;
 		std::string	darkestSecret;
-	
+		int			index;
+		std::string	read_input(std::string str);
+
 	public:
-		Contact(std::string firstName, std::string lastName, std::string nickname, std::string phoneNumber, std::string darkestSecret);
-		void	showColumn(int index);
-		void	showContact(int index);
-		void	setIndex(void);
+		Contact();
+		~Contact();
+		void	create(void);	
+		void	showColumn(void);
+		void	showContact(void);
+		void	setIndex(int index);
 };
 
 #endif
